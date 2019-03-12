@@ -7,9 +7,9 @@ ssh @vagrant10.10.45.11
 
 Run yum update to update the yum repo
 
-1— installed apache
+— installed apache
 
-Sudo yum install http
+Sudo yum install httpd
 
 —Start the apache service
 
