@@ -1,0 +1,42 @@
+
+Installation of LAMP Stack on VM Slave-1
+
+SSH onto server 
+
+ssh @vagrant10.10.45.11
+
+Run yum update to update the yum repo
+
+1— installed apache
+
+Sudo yum install http
+
+—Start the apache service
+
+systemctl start httpd
+
+—enable apache to start on reboot
+
+sudo systemctl enable httpd.service
+
+— install MySQL: MariaDB
+
+sudo yum install mariadb-server mariadb
+
+— start mariadb service
+
+sudo systemctl start mariadba
+
+—securing mariadb
+
+sudo mysql_secure_installation
+
+—Install PHP
+
+sudo yum install php php-mysql
+
+https://hostadvice.com/how-to/how-to-install-lamp-stack-on-centos-7/
+
+
+ 
+
