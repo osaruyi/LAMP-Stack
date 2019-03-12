@@ -25,7 +25,7 @@ sudo yum install mariadb-server mariadb
 
 — start mariadb service
 
-sudo systemctl start mariadba
+sudo systemctl start mariadb
 
 —securing mariadb
 
@@ -35,7 +35,12 @@ sudo mysql_secure_installation
 
 sudo yum install php php-mysql
 
-https://hostadvice.com/how-to/how-to-install-lamp-stack-on-centos-7/
+— after php installation restart httpd service
+
+sudo systemctl restart httpd.service
+
+
+Guidance notes: https://hostadvice.com/how-to/how-to-install-lamp-stack-on-centos-7/
 
 
  
